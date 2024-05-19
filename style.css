@@ -1,1 +1,69 @@
-h1{color: aqua;}
+body {
+  background-color: #baa48e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: system-ui;
+}
+h1 {
+  padding-top: 25px;
+}
+img {
+  max-width: 100%;
+  min-width: 300px;
+  max-height: 500px;
+}
+.cityImage {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+#texasInfo {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  /* text-wrap: wrap; */
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
+/* Styling for nav bar */
+.topnav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0b13a5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover:not(.active) {
+  background-color: #e20909;
+}
+.active {
+  background-color: #1d71ca9c;
+}
