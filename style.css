@@ -6,7 +6,9 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   font-family: system-ui;
+  position: absolute;
 }
+
 h1 {
   padding-top: 40px;
 }
@@ -16,10 +18,6 @@ img {
   max-height: 500px;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
-}
 #texasInfo {
   padding-top: 50px;
   display: flex;
@@ -30,10 +28,25 @@ h2 {
   gap: 20px;
 }
 
-aside {
+.citySection {
   display: flex;
-  justify-content: center;
-  text-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 10px;
+  max-width: 90%;
+}
+aside {
+  position: relative;
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: 0.5rem;
 }
 
 table,
